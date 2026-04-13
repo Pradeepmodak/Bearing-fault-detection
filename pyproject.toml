@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bearing-fault-diagnosis"
+version = "1.0.0"
+description = "End-to-end bearing fault diagnosis project using the CWRU dataset."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-only" }
+authors = [
+  { name = "Project Maintainer" }
+]
+dependencies = [
+  "joblib>=1.4.0",
+  "matplotlib>=3.8.0",
+  "numpy>=1.26.0",
+  "pandas>=2.1.0",
+  "plotly>=5.20.0",
+  "scikit-learn>=1.4.0",
+  "scipy>=1.11.0",
+  "seaborn>=0.13.0",
+  "streamlit>=1.33.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,12 @@
+{
+  "best_model": "random_forest",
+  "sampling_rate": 48000,
+  "frame_size": 2048,
+  "dataset_rows": 9736,
+  "dataset_columns": 30,
+  "models_compared": [
+    "random_forest",
+    "svm_rbf"
+  ],
+  "best_model_f1_weighted": 0.9759413577016601
+}

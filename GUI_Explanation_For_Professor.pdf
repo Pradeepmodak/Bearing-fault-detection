@@ -1,0 +1,141 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 3006 >>
+stream
+BT
+/F1 12 Tf
+50 790 Td
+14 TL
+(GUI Explanation for Professor - Bearing Fault Diagnosis Project) Tj
+T*
+() Tj
+T*
+(1. Purpose of the GUI) Tj
+T*
+(This GUI demonstrates bearing fault diagnosis in a practical way. It takes vibration signal data as input,) Tj
+T*
+(extracts important features, and uses the trained machine learning model to predict the bearing condition.) Tj
+T*
+() Tj
+T*
+(2. Input Settings) Tj
+T*
+(Sampling Rate \(Hz\): Number of amplitude samples recorded per second. It is needed for time scaling and FFT.) Tj
+T*
+(Upload Vibration CSV: Uploads a CSV file containing vibration amplitude values.) Tj
+T*
+(Use Built-In Demo Signal: Tests the system using a prepared example signal.) Tj
+T*
+(Expected Classes: Normal, Inner Race Fault, Outer Race Fault, Ball Fault.) Tj
+T*
+() Tj
+T*
+(3. Workflow Section) Tj
+T*
+(A vibration signal is uploaded. Then the system computes time-domain and FFT-based features and sends) Tj
+T*
+(them to the trained machine learning model for classification.) Tj
+T*
+() Tj
+T*
+(4. Predicted Fault) Tj
+T*
+(This shows the final bearing condition predicted by the trained model.) Tj
+T*
+() Tj
+T*
+(5. Confidence) Tj
+T*
+(This is the probability score of the predicted class. Higher value means the model is more confident.) Tj
+T*
+() Tj
+T*
+(6. Signal Length) Tj
+T*
+(This shows how many amplitude samples are present in the uploaded signal window.) Tj
+T*
+() Tj
+T*
+(7. Time-Domain Waveform) Tj
+T*
+(This graph shows amplitude versus time and represents the raw vibration behavior of the bearing signal.) Tj
+T*
+() Tj
+T*
+(8. Frequency Spectrum \(FFT\)) Tj
+T*
+(This graph shows magnitude versus frequency after FFT and helps identify dominant frequency components.) Tj
+T*
+() Tj
+T*
+(9. Confidence by Fault Type) Tj
+T*
+(This table shows the probability of the signal belonging to each fault category.) Tj
+T*
+() Tj
+T*
+(10. Extracted Features) Tj
+T*
+(This section shows numerical features extracted from the vibration signal, such as mean, standard deviation,) Tj
+T*
+(RMS, kurtosis, spectral mean, and frequency variation factor. These features are used as input to the classifier.) Tj
+T*
+() Tj
+T*
+(11. Confusion Matrix) Tj
+T*
+(This shows model performance on test data. Diagonal values are correct predictions and off-diagonal values) Tj
+T*
+(are misclassifications.) Tj
+T*
+() Tj
+T*
+(12. Feature Importance) Tj
+T*
+(This shows which extracted features are most important for the Random Forest model.) Tj
+T*
+() Tj
+T*
+(13. Backend Flow) Tj
+T*
+(After uploading the CSV, the system reads the amplitude values, extracts features, passes them to the) Tj
+T*
+(trained model, predicts the most likely fault type, and displays the result in the GUI.) Tj
+T*
+() Tj
+T*
+(14. Short Overall Explanation) Tj
+T*
+(This GUI is the practical front-end of the bearing fault diagnosis system. It takes vibration data as input,) Tj
+T*
+(extracts meaningful features, classifies the bearing condition using a trained ML model, and displays the) Tj
+T*
+(result along with signal plots and model interpretation outputs.) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3369
+%%EOF

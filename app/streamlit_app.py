@@ -101,23 +101,13 @@ elif "demo_signal" in st.session_state:
     signal = st.session_state["demo_signal"]
     signal_source = f"Built-in demo from {st.session_state.get('demo_signal_source', 'data/raw')}"
 
-summary_col1, summary_col2 = st.columns([1.2, 1.8])
+summary_col1 = st.columns([1])[0]
 with summary_col1:
     st.markdown(
         """
         <div class="info-card">
             <h3 style="margin-top:0;">Workflow</h3>
             <p style="margin-bottom:0;">Upload a vibration signal, compute time-domain and FFT-based features, then classify the bearing condition with the trained ML model.</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-with summary_col2:
-    st.markdown(
-        """
-        <div class="info-card">
-            <h3 style="margin-top:0;">What You Can Show In A Demo</h3>
-            <p style="margin-bottom:0;">Waveform, frequency spectrum, class probabilities, confidence, and the engineered features used by the model.</p>
         </div>
         """,
         unsafe_allow_html=True,
